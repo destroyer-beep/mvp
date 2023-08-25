@@ -4,7 +4,7 @@ type Props = {
   }
 }
 
-export function Profile({params: { id }}) {
+export default function Profile({params: { id }}) {
   return <div>
     Profile
   </div>

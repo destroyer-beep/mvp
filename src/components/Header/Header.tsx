@@ -1,5 +1,5 @@
 import styles from './Header.module.scss'
 
-export function Header() {
+export default function Header() {
   return <header className={styles.header}>Header</header>
 }
