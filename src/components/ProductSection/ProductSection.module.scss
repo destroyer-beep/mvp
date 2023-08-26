@@ -1,0 +1,39 @@
+.products {
+  width: 100%;
+  margin-top: 100px;
+
+  &__header {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  &__collapse {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: var(--primary-color);
+    cursor: pointer;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
