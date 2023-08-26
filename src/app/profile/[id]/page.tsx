@@ -28,18 +28,18 @@ export default function Profile({params: { id }}:Props) {
             </div>
             <div className={styles.link}>
               <Link className={styles.link__item} href={"/profile/1"}>
-                <Image src={messages} width={70} height={70} alt={'Messages'} priorit/>
+                <Image src={messages} width={70} height={70} alt={'Messages'} priority/>
               </Link>
               <Link className={styles.link__item} href={"/profile/1"}>
-                <Image src={like} width={70} height={70} alt={'Like'} priorit/>
+                <Image src={like} width={70} height={70} alt={'Like'} priority/>
               </Link>
               <Link className={styles.link__item} href={"/profile/1"}>
-                <Image src={settings} width={70} height={70} alt={'Settings'} priorit/>
+                <Image src={settings} width={70} height={70} alt={'Settings'} priority/>
               </Link>
             </div>
           </div>
           <div className={styles.announcement}>
-            <Image src={announcement} width={330} height={220} alt={'Announcement'} priorit/>
+            <Image src={announcement} width={330} height={220} alt={'Announcement'} priority/>
             <h2 className={styles.announcement__title}>
               Выставить на продажу - легко
             </h2>
