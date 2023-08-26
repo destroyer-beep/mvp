@@ -1,6 +1,7 @@
 import styles from './page.module.scss';
 import Image from "next/image";
 import Link from "next/link";
+import ProductSection from "@/components/ProductSection/ProductSection";
 
 import profilePhoto from "./images/photo_empty.png";
 import messages from "./images/messages.png";
@@ -10,14 +11,10 @@ import announcement from "./images/add_announs.png";
 import fullStar from "./images/full_star.png";
 import emptyStar from "./images/empty_star.png";
 
-type Props = {
-  params: {
-    id: string
-  }
-}
+import data from '../../service/data';
 
-export default function Profile({params: { id }}:Props) {
-  console.log(id)
+
+export default function Profile() {
   return <section className={styles.profile}>
     <div className="container">
       <div className={styles.profile__container}>
@@ -27,13 +24,13 @@ export default function Profile({params: { id }}:Props) {
               <Image src={profilePhoto} width={250} height={250} alt={'Profile photo'} priority/>
             </div>
             <div className={styles.link}>
-              <Link className={styles.link__item} href={"/profile/1"}>
+              <Link className={styles.link__item} href={"/profile/"}>
                 <Image src={messages} width={70} height={70} alt={'Messages'} priority/>
               </Link>
-              <Link className={styles.link__item} href={"/profile/1"}>
+              <Link className={styles.link__item} href={"/profile/"}>
                 <Image src={like} width={70} height={70} alt={'Like'} priority/>
               </Link>
-              <Link className={styles.link__item} href={"/profile/1"}>
+              <Link className={styles.link__item} href={"/profile/"}>
                 <Image src={settings} width={70} height={70} alt={'Settings'} priority/>
               </Link>
             </div>
@@ -66,7 +63,7 @@ export default function Profile({params: { id }}:Props) {
 
             <div className={styles.reviews}>
               <div className={styles.reviews__line}></div>
-              <Link className={styles.reviews__link} href={"/profile/1"}>показать отзывы</Link>
+              <Link className={styles.reviews__link} href={"/profile/"}>показать отзывы</Link>
             </div>
 
             <div className={styles.stat}>
@@ -88,6 +85,14 @@ export default function Profile({params: { id }}:Props) {
               </div>
             </div>
           </div>
+        </div>
+        <div className={styles.section}>
+          <ProductSection data={data} title={'Мои покупки'} visibleInfo={true}></ProductSection>
+          <ProductSection data={data} title={'Мои объявления'} visibleInfo={false}></ProductSection>
+          <ProductSection data={data} title={'Черновики'} visibleInfo={false}></ProductSection>
+          <ProductSection data={data} title={'Архив покупок'} visibleInfo={false}></ProductSection>
+          <ProductSection data={data} title={'Архив продаж'} visibleInfo={false}></ProductSection>
+          <ProductSection data={data} title={'Избранное'} visibleInfo={false}></ProductSection>
         </div>
       </div>
     </div>

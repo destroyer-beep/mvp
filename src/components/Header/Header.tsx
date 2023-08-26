@@ -10,10 +10,10 @@ export default function Header() {
     <div className="container">
       <div className={styles.header__container}>
         <nav className={styles.nav}>
-          <Link className={styles.link} href={"/profile/1"}>Коллекция</Link>
-          <Link className={styles.link} href={"/profile/1"}>Лимитированное</Link>
-          <Link className={styles.link} href={"/profile/1"}>Пред-заказы</Link>
-          <Link className={styles.link} href={"/profile/1"}>Распродажа</Link>
+          <Link className={styles.link} href={"/profile/"}>Коллекция</Link>
+          <Link className={styles.link} href={"/profile/"}>Лимитированное</Link>
+          <Link className={styles.link} href={"/profile/"}>Пред-заказы</Link>
+          <Link className={styles.link} href={"/profile/"}>Распродажа</Link>
         </nav>
         <div className={styles.logo}>
           LOGO HERE
