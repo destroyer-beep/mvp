@@ -1,3 +1,69 @@
 .header {
+  width: 100%;
+  background-color: var(--primary-bcg);
 
+  &__container {
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+      max-width: 540px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .link {
+        color: var(--primary-color);
+        font-size: 16px;
+
+        &:visited {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    .logo {
+      color: var(--primary-color);
+      font-size: 20px;
+    }
+
+    .buttons {
+      max-width: 440px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .buttons__wrapper {
+        max-width: 175px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .buttons__item {
+          background: none;
+          border: none;
+          cursor: pointer;
+
+          &:hover {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .basket {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--primary-color);
+        font-size: 22px;
+      }
+    }
+  }
 }
