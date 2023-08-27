@@ -26,6 +26,11 @@
         border-radius: 30px;
         background-color: var(--secondary-bcg);
         box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.36);
+        cursor: pointer;
+
+        &:hover {
+          box-shadow: 0 0 6.5px rgba(0, 0, 0, 0.36);
+        }
       }
 
       .link {
@@ -43,6 +48,11 @@
           border-radius: 30px;
           background-color: var(--secondary-bcg);
           box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.36);
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: 0 0 6.5px rgba(0, 0, 0, 0.36);
+          }
         }
       }
     }
@@ -57,6 +67,11 @@
       border-radius: 30px;
       background-color: var(--secondary-bcg);
       box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.36);
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 6.5px rgba(0, 0, 0, 0.36);
+      }
 
       &__title {
         width: 100%;
@@ -95,6 +110,11 @@
       border-radius: 30px;
       background-color: var(--secondary-bcg);
       box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.36);
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 6.5px rgba(0, 0, 0, 0.36);
+      }
 
       &__title {
         font-size: 25px;

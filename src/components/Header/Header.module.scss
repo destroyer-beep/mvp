@@ -31,38 +31,25 @@
       font-size: 20px;
     }
 
-    .buttons {
+    .links {
       max-width: 440px;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      .buttons__wrapper {
-        max-width: 175px;
+      &__wrapper {
+        max-width: 200px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        .buttons__item {
-          background: none;
-          border: none;
-          cursor: pointer;
-
-          &:hover {
-            outline: none;
-            box-shadow: none;
-          }
-        }
       }
 
-      .basket {
+      &__item {
         background: none;
         border: none;
         cursor: pointer;
-        color: var(--primary-color);
-        font-size: 22px;
       }
     }
   }
