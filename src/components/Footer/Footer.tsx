@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.footer__container}>
         <div className={styles.footer__logo}>LOGO HERE</div>
         <div className={styles.footer__links}>
-          <div className={styles.footer__links_wrapper}>
+          <div className={styles.footer__links_wrapper_contact}>
             <Link className={styles.footer__links_phone} href={'tel:+78007707021'}>8 800 770 70 21</Link>
             <div className={styles.footer__links_text}>круглосуточный телефон call-центра</div>
             <Link  className={styles.footer__links_social} href={'/profile'}>Написать в WhatsApp</Link>
