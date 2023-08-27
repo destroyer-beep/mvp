@@ -22,18 +22,60 @@
     align-items: center;
     font-size: 22px;
     color: var(--primary-color);
+    position: relative;
     cursor: pointer;
 
     span {
       margin-left: 20px;
+      transition: all 0.2s ease-in;
+    }
+
+    &_hidden {
+      transform: rotate(180deg);
     }
   }
 
+  &__dropdown {
+    position: absolute;
+    left: 0;
+    min-width: 180px;
+    top: 100%;
+    flex-direction: column;
+    display: none;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.36);
+    overflow: hidden;
+
+    &_item {
+      padding: 5px 10px;
+
+      &:hover {
+        background-color: var(--secondary-bcg);
+      }
+    }
+  }
+
+  &__dropdown_active {
+    display: flex;
+  }
+
   &__wrapper {
+    padding-bottom: 30px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: center;
+
+    &_row {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+  }
+
+  &__card {
+    display: flex;
     align-items: center;
   }
 }

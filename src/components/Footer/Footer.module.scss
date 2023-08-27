@@ -1,3 +1,58 @@
 .footer {
+  width: 100%;
+  margin-top: 60px;
+  background: var(--primary-bcg);
 
+  &__container {
+    width: 100%;
+    padding: 50px;
+  }
+
+  &__logo {
+    font-size: 56px;
+    color: var(--primary-color);
+  }
+
+  &__links {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+    &_wrapper {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_phone {
+      font-size: 29px;
+      color: var(--primary-color);
+    }
+
+    &_text {
+      margin-top: 7px;
+      font-size: 18px;
+      color: var(--primary-color);
+    }
+
+    &_social {
+      display: block;
+      margin-top: 35px;
+      color: var(--primary-color);
+      font-size: 23px;
+    }
+
+    &_title {
+      margin-bottom: 35px;
+      font-size: 23px;
+      color: var(--primary-color);
+    }
+
+    &_item {
+      margin-top: 25px;
+      max-width: 260px;
+      font-size: 15px;
+      color: var(--primary-color);
+    }
+  }
 }
