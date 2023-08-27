@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
 
           <div className={styles.footer__links_wrapper}>
-            <b2 className={styles.footer__links_title}>О НАС</b2>
+            <h2 className={styles.footer__links_title}>О НАС</h2>
             <Link href={'/profile'} className={styles.footer__links_item}>политика обработки персональных данных</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>документы сайта</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>вакансии</Link>
