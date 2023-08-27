@@ -22,14 +22,14 @@ export default function Footer() {
           </div>
 
           <div className={styles.footer__links_wrapper}>
-            <h2 className={styles.footer__links_title}>Клиентам</h2>
+            <h2 className={styles.footer__links_title}>КЛИЕНТАМ</h2>
             <Link href={'/profile'} className={styles.footer__links_item}>заказы и доставка</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>возврат товара</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>бонусная программа</Link>
           </div>
 
           <div className={styles.footer__links_wrapper}>
-            <h2 className={styles.footer__links_title}>контакты</h2>
+            <h2 className={styles.footer__links_title}>КОНТАКТЫ</h2>
             <Link href={'/profile'} className={styles.footer__links_item}>общие контакты</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>отдел развития</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>отдел маркетинга и рекламы</Link>
