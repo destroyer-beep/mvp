@@ -5,6 +5,7 @@ import profileIcon from './images/profile_icon.png';
 import favoritesIcon from './images/favorites_icon.png';
 import searchIcon from './images/search_icon.png';
 import messages from './images/messages.png';
+import burgerIcon from './images/burgerIcon.png';
 
 export default function Header() {
   return <header className={styles.header}>
@@ -56,6 +57,31 @@ export default function Header() {
             </Link>
           </div>
         </div>
+      </div>
+      <div className={styles.header__mobile}>
+        <button className={styles.header__mobile_burger}>
+          <Image
+              src={burgerIcon}
+              width={32}
+              height={32}
+              alt={'Burger icon'}
+              priority
+          />
+        </button>
+
+        <div className={styles.header__mobile_logo}>
+          LOGO HERE
+        </div>
+
+        <button className={styles.header__mobile_search}>
+          <Image
+              src={searchIcon}
+              width={32}
+              height={32}
+              alt={'Burger icon'}
+              priority
+          />
+        </button>
       </div>
     </div>
   </header>
