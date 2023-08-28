@@ -15,6 +15,7 @@
 
     .view {
       max-width: 370px;
+      min-height: 585px;
       width: 100%;
 
       .photo {
@@ -59,6 +60,7 @@
 
     .announcement {
       max-width: 570px;
+      min-height: 585px;
       padding: 65px 25px 30px;
       width: 100%;
       flex-direction: column;
@@ -102,6 +104,7 @@
 
     .info {
       max-width: 525px;
+      min-height: 585px;
       padding: 45px 25px 10px;
       width: 100%;
       flex-direction: column;
