@@ -18,7 +18,7 @@ type TData = {
   data: TProduct
 }
 export default function CardInfo({data}:TData) {
-  const [grade, setGrade] = useState(data.grade);
+  const [grade, setGrade] = useState(data.grade - 1);
   const gradeItems = [0, 1, 2, 3, 4];
 
   return <div className={styles.card}>
@@ -37,8 +37,8 @@ export default function CardInfo({data}:TData) {
           <span>{data.grade}/5</span>
           <div className={styles.card__content_stars}>
             {gradeItems.map(value => {
-              if(value <= grade) return <Image key={Math.random()} onMouseOver={() => setGrade(value)} onMouseOut={() => setGrade(data.grade)} src={fullStar} width={37} height={43} alt={'Star'} priority/>;
-              else return <Image key={Math.random()} onMouseOver={() => setGrade(value)} onMouseOut={() => setGrade(data.grade)} src={emptyStar} width={37} height={43} alt={'Star'} priority/>
+              if(value <= grade) return <Image key={Math.random()} onMouseOver={() => setGrade(value)} onMouseOut={() => setGrade(data.grade - 1)} src={fullStar} width={37} height={43} alt={'Star'} priority/>;
+              else return <Image key={Math.random()} onMouseOver={() => setGrade(value)} onMouseOut={() => setGrade(data.grade - 1)} src={emptyStar} width={37} height={43} alt={'Star'} priority/>
             })}
           </div>
         </div>

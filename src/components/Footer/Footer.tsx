@@ -7,7 +7,7 @@ export default function Footer() {
       <div className={styles.footer__container}>
         <div className={styles.footer__logo}>LOGO HERE</div>
         <div className={styles.footer__links}>
-          <div className={styles.footer__links_wrapper}>
+          <div className={styles.footer__links_wrapper_contact}>
             <Link className={styles.footer__links_phone} href={'tel:+78007707021'}>8 800 770 70 21</Link>
             <div className={styles.footer__links_text}>круглосуточный телефон call-центра</div>
             <Link  className={styles.footer__links_social} href={'/profile'}>Написать в WhatsApp</Link>
@@ -22,14 +22,14 @@ export default function Footer() {
           </div>
 
           <div className={styles.footer__links_wrapper}>
-            <h2 className={styles.footer__links_title}>Клиентам</h2>
+            <h2 className={styles.footer__links_title}>КЛИЕНТАМ</h2>
             <Link href={'/profile'} className={styles.footer__links_item}>заказы и доставка</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>возврат товара</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>бонусная программа</Link>
           </div>
 
           <div className={styles.footer__links_wrapper}>
-            <h2 className={styles.footer__links_title}>контакты</h2>
+            <h2 className={styles.footer__links_title}>КОНТАКТЫ</h2>
             <Link href={'/profile'} className={styles.footer__links_item}>общие контакты</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>отдел развития</Link>
             <Link href={'/profile'} className={styles.footer__links_item}>отдел маркетинга и рекламы</Link>
