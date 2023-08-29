@@ -18,7 +18,7 @@ type TData = {
 export default function Card({data, img}:TData) {
   return <div className={styles.card}>
     <div className={styles.card__img}>
-      <Image src={img} width={260} alt={'Product'} priority/>
+      <Image src={img} style={{width: '80%', height: 'auto'}} alt={'Product'} priority/>
     </div>
     <div className={styles.card__name}>{data.name}</div>
     <div className={styles.card__title}>{data.title}</div>

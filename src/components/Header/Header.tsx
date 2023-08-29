@@ -6,6 +6,9 @@ import favoritesIcon from './images/favorites_icon.png';
 import searchIcon from './images/search_icon.png';
 import messages from './images/messages.png';
 import burgerIcon from './images/burgerIcon.png';
+import like from './images/like.png';
+import create from './images/create.png';
+import settings from './images/settings.png';
 
 export default function Header() {
   return <header className={styles.header}>
@@ -83,6 +86,71 @@ export default function Header() {
           />
         </button>
       </div>
+    </div>
+
+    <div className={styles.nav__mobile}>
+      <nav className={styles.nav__mobile_items}>
+        <div className={styles.nav__mobile_item}>
+          <Link href={"/"} className={styles.links__item}>
+            <Image
+                src={like}
+                width={32}
+                height={32}
+                alt={'Search icon'}
+                priority
+            />
+          </Link>
+          <span>Избранное</span>
+        </div>
+        <div className={styles.nav__mobile_item}>
+          <Link href={"/"} className={styles.links__item}>
+            <Image
+                src={messages}
+                width={32}
+                height={32}
+                alt={'Search icon'}
+                priority
+            />
+          </Link>
+          <span>Сообщения</span>
+        </div>
+        <div className={styles.nav__mobile_item}>
+          <Link href={"/"} className={styles.links__item}>
+            <Image
+                src={create}
+                width={32}
+                height={32}
+                alt={'Search icon'}
+                priority
+            />
+          </Link>
+          <span>Разместить</span>
+        </div>
+        <div className={styles.nav__mobile_item}>
+          <Link href={"/"} className={styles.links__item}>
+            <Image
+                src={settings}
+                width={32}
+                height={32}
+                alt={'Search icon'}
+                priority
+            />
+          </Link>
+          <span>Настройки</span>
+        </div>
+        <div className={styles.nav__mobile_item}>
+          <Link href={"/"} className={styles.links__item}>
+            <Image
+                src={profileIcon}
+                width={32}
+                height={32}
+                alt={'Search icon'}
+                priority
+            />
+          </Link>
+          <span>Аккаунт</span>
+        </div>
+      </nav>
     </div>
   </header>
 }

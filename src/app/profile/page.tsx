@@ -12,6 +12,7 @@ import fullStar from "./images/full_star.png";
 import emptyStar from "./images/empty_star.png";
 
 import data from '../../service/data';
+import classNames from "classnames";
 
 
 export default function Profile() {
@@ -19,7 +20,7 @@ export default function Profile() {
     <div className="container">
       <div className={styles.profile__container}>
         <div className={styles.header}>
-          <div className={styles.view}>
+          <div className={classNames(styles.view, styles.wrapper)}>
             <div className={styles.photo}>
               <Image src={profilePhoto} alt={'Profile photo'} priority/>
             </div>
@@ -35,7 +36,7 @@ export default function Profile() {
               </Link>
             </div>
           </div>
-          <div className={styles.announcement}>
+          <div className={classNames(styles.announcement, styles.wrapper)}>
             <Image src={announcement} style={{width: '60%', height: 'auto'}} alt={'Announcement'} priority/>
             <div className={styles.announcement__wrapper}>
               <h2 className={styles.announcement__title}>
@@ -47,7 +48,7 @@ export default function Profile() {
             </div>
             <button className={styles.announcement__button}>Создать объявление</button>
           </div>
-          <div className={styles.info}>
+          <div className={classNames(styles.info, styles.wrapper)}>
             <h3 className={styles.info__title}>
               Информация об аккаунте
             </h3>

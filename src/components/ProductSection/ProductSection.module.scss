@@ -4,6 +4,7 @@
 
   &__header {
     display: flex;
+    align-items: center;
   }
 
   &__title {
@@ -13,6 +14,14 @@
 
     span {
       color: var(--primary-color);
+    }
+
+    @media (max-width: 1500px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 12px;
     }
   }
 
@@ -32,6 +41,15 @@
 
     &_hidden {
       transform: rotate(180deg);
+    }
+
+    @media (max-width: 1500px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      margin-left: 20px;
+      font-size: 12px;
     }
   }
 
@@ -64,18 +82,22 @@
     padding-bottom: 30px;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
 
     &_row {
       flex-wrap: nowrap;
       overflow-x: auto;
+      justify-content: flex-start;
     }
   }
 
   &__card {
     display: flex;
     align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 50px;
   }
 }
