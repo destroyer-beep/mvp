@@ -2,7 +2,16 @@
   width: 100%;
   background-color: var(--primary-bcg);
 
+  @media (max-width: 950px) {
+    background-color: #FFF;
+  }
+
   &__container {
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+
     width: 100%;
     padding: 35px 0;
     display: flex;
@@ -27,6 +36,7 @@
     }
 
     .logo {
+      min-width: 120px;
       color: var(--primary-color);
       font-size: 20px;
     }
@@ -51,6 +61,32 @@
         border: none;
         cursor: pointer;
       }
+    }
+  }
+
+  &__mobile {
+    width: 100%;
+    padding: 30px 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+
+    @media (max-width: 950px) {
+      display: flex;
+    }
+
+    &_burger {
+      background: #FFF;
+    }
+
+    &_logo {
+      font-size: 15px;
+      color: var(--primary-color);
+    }
+
+    &_search {
+      background: #FFF;
     }
   }
 }

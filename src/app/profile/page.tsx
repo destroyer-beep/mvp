@@ -21,28 +21,30 @@ export default function Profile() {
         <div className={styles.header}>
           <div className={styles.view}>
             <div className={styles.photo}>
-              <Image src={profilePhoto} width={250} height={250} alt={'Profile photo'} priority/>
+              <Image src={profilePhoto} alt={'Profile photo'} priority/>
             </div>
             <div className={styles.link}>
               <Link className={styles.link__item} href={"/profile/"}>
-                <Image src={messages} width={70} height={70} alt={'Messages'} priority/>
+                <Image src={messages} style={{width: '100%', height: 'auto'}} alt={'Messages'} priority/>
               </Link>
               <Link className={styles.link__item} href={"/profile/"}>
-                <Image src={like} width={70} height={70} alt={'Like'} priority/>
+                <Image src={like} style={{width: '100%', height: 'auto'}} alt={'Like'} priority/>
               </Link>
               <Link className={styles.link__item} href={"/profile/"}>
-                <Image src={settings} width={70} height={70} alt={'Settings'} priority/>
+                <Image src={settings} style={{width: '100%', height: 'auto'}} alt={'Settings'} priority/>
               </Link>
             </div>
           </div>
           <div className={styles.announcement}>
-            <Image src={announcement} width={330} height={220} alt={'Announcement'} priority/>
-            <h2 className={styles.announcement__title}>
-              Выставить на продажу - легко
-            </h2>
-            <p className={styles.announcement__text}>
-              Создайте объявление, и его увидят тысячи покупателей
-            </p>
+            <Image src={announcement} style={{width: '60%', height: 'auto'}} alt={'Announcement'} priority/>
+            <div className={styles.announcement__wrapper}>
+              <h2 className={styles.announcement__title}>
+                Выставить на продажу - легко
+              </h2>
+              <p className={styles.announcement__text}>
+                Создайте объявление, и его увидят тысячи покупателей
+              </p>
+            </div>
             <button className={styles.announcement__button}>Создать объявление</button>
           </div>
           <div className={styles.info}>
@@ -53,17 +55,17 @@ export default function Profile() {
               <div>Ваш рейтинг</div>
               <div className={styles.rating__value}>4/5</div>
               <div className={styles.rating__stars}>
-                <Image src={fullStar} width={27} height={43} alt={'Star'} priority/>
-                <Image src={fullStar} width={27} height={43} alt={'Star'} priority/>
-                <Image src={fullStar} width={27} height={43} alt={'Star'} priority/>
-                <Image src={emptyStar} width={27} height={43} alt={'Star'} priority/>
-                <Image src={emptyStar} width={27} height={43} alt={'Star'} priority/>
+                <Image src={fullStar} style={{width: '15%', height: 'auto'}} alt={'Star'} priority/>
+                <Image src={fullStar} style={{width: '15%', height: 'auto'}} alt={'Star'} priority/>
+                <Image src={fullStar} style={{width: '15%', height: 'auto'}} alt={'Star'} priority/>
+                <Image src={emptyStar} style={{width: '15%', height: 'auto'}} alt={'Star'} priority/>
+                <Image src={emptyStar} style={{width: '15%', height: 'auto'}} alt={'Star'} priority/>
               </div>
             </div>
 
             <div className={styles.reviews}>
               <div className={styles.reviews__line}></div>
-              <Link className={styles.reviews__link} href={"/profile/"}>показать отзывы</Link>
+              <Link className={styles.reviews__link} href={"/profile/"}>показать&nbsp;отзывы</Link>
             </div>
 
             <div className={styles.stat}>
