@@ -2,11 +2,31 @@
   margin: 50px 10px 0;
   width: 570px;
   font-size: 16px;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 1500px) {
+    width: 290px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 670px) {
+    margin: 50px 5px 0;
+    width: 230px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 550px) {
+    width: 140px;
+    font-size: 10px;
+  }
 
   &__content {
     width: 100%;
     padding: 37px 25px;
-    height: 370px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,6 +35,21 @@
 
     &_row {
       display: flex;
+    }
+
+    &_grades {
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card__content_item {
+        @media (max-width: 600px) {
+          margin-top: 5px;
+          width: 100%;
+          justify-content: space-around;
+        }
+      }
     }
 
     &_item {
@@ -26,6 +61,14 @@
 
       span {
         color: var(--primary-color);
+      }
+
+      @media (max-width: 1500px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 9px;
       }
     }
 
@@ -39,18 +82,30 @@
         cursor: pointer;
       }
     }
+
+    @media (max-width: 600px) {
+      padding: 15px 10px;
+    }
   }
 
   &__btn {
     width: 100%;
     margin-top: 40px;
-    height: 50px;
     display: flex;
+    padding: 10px 0;
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
     font-size: 25px;
     border-radius: 10px;
     cursor: pointer;
+
+    @media (max-width: 1500px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 10px;
+    }
   }
 }

@@ -4,6 +4,10 @@
   &__container {
     width: 100%;
     padding: 0 50px;
+
+    @media (max-width: 1500px) {
+      padding: 0;
+    }
   }
 
   .header {
@@ -12,13 +16,30 @@
     display: flex;
     justify-content: space-between;
 
+    .wrapper {
+      height: 585px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width: 1500px) {
+        height: 445px;
+      }
+
+      @media (max-width: 950px) {
+        width: 48% !important;
+        height: 400px !important;
+      }
+
+      @media (max-width: 600px) {
+        height: 200px !important;
+      }
+    }
+
     .view {
       max-width: 370px;
       height: 585px;
       width: 27%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
 
       .photo {
         width: 100%;
@@ -47,6 +68,10 @@
         @media (max-width: 1500px) {
           height: 70%;
         }
+
+        @media (max-width: 600px) {
+          height: 100%;
+        }
       }
 
       .link {
@@ -56,7 +81,7 @@
         align-items: center;
 
         &__item {
-          width: 30%;
+          min-width: 30%;
           padding: 15px;
           display: flex;
           justify-content: center;
@@ -74,14 +99,10 @@
             width: 27%;
           }
         }
-      }
 
-      @media (max-width: 1500px) {
-        height: 445px;
-      }
-
-      @media (max-width: 950px) {
-        width: 45%;
+        @media (max-width: 600px) {
+          display: none;
+        }
       }
     }
 
@@ -90,10 +111,7 @@
       height: 585px;
       padding: 35px 25px;
       width: 35%;
-      flex-direction: column;
-      display: flex;
       align-items: center;
-      justify-content: space-between;
       border-radius: 30px;
       background-color: var(--secondary-bcg);
       box-shadow: 0 0 12.5px rgba(0, 0, 0, 0.36);
@@ -144,22 +162,15 @@
         }
       }
 
-      @media (max-width: 1500px) {
-        height: 445px;
-      }
-
       @media (max-width: 950px) {
         display: none;
       }
     }
 
     .info {
-      max-width: 525px;
       height: 585px;
-      padding: 45px 25px 10px;
+      padding: 30px 25px 10px;
       width: 29%;
-      flex-direction: column;
-      display: flex;
       align-items: center;
       border-radius: 30px;
       background-color: var(--secondary-bcg);
@@ -177,6 +188,11 @@
         @media (max-width: 1500px) {
           font-size: 17px;
         }
+
+        @media (max-width: 600px) {
+          font-size: 10px;
+          text-align: center;
+        }
       }
 
       .rating {
@@ -187,21 +203,33 @@
         align-items: center;
         font-size: 22px;
 
+        @media (max-width: 950px) {
+          margin-top: 15px;
+        }
+
         &__value {
           color: var(--primary-color);
         }
 
         .rating__stars {
           max-width: 180px;
-          width: 100%;
+          width: 80%;
           margin: 0 5px;
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          @media (max-width: 600px) {
+            width: 60%;
+          }
         }
 
         @media (max-width: 1500px) {
           font-size: 17px;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 8px;
         }
       }
 
@@ -226,6 +254,11 @@
           @media (max-width: 1500px) {
             font-size: 18px;
           }
+
+          @media (max-width: 600px) {
+            font-size: 6px;
+            margin-left: 5px;
+          }
         }
       }
 
@@ -245,6 +278,10 @@
             @media (max-width: 1500px) {
               font-size: 18px;
             }
+
+            @media (max-width: 600px) {
+              font-size: 8px;
+            }
           }
 
           &_value {
@@ -254,17 +291,21 @@
             @media (max-width: 1500px) {
               font-size: 100px;
             }
+
+            @media (max-width: 600px) {
+              font-size: 30px;
+            }
           }
         }
       }
 
-      @media (max-width: 1500px) {
-        height: 445px;
+      @media (max-width: 600px) {
+        padding: 10px;
       }
+    }
 
-      @media (max-width: 950px) {
-        width: 45%;
-      }
+    @media (max-width: 600px) {
+      margin-top: 30px;
     }
   }
 
